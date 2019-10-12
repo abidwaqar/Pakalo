@@ -1,0 +1,5 @@
+python=3.7
+gtts
+
+
+conda install -c anaconda pyaudio

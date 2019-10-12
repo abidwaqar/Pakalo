@@ -1,0 +1,1 @@
+1) Convert database from test mode to locked mode
