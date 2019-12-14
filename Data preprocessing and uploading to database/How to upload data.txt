@@ -1,3 +1,0 @@
-Database connection
-https://medium.com/@cbrannen/importing-data-into-firestore-using-python-dce2d6d3cd51
-
