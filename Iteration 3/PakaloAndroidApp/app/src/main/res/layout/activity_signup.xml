@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@drawable/signup">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/lm_light"
+        android:text="Hello There"
+        android:textColor="@color/colorPakaloP"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username_al"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_round_button"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="enter a username"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/email_al"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/text_round_button"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="enter your email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_al" />
+
+    <EditText
+        android:id="@+id/password_al"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/text_round_button"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="enter a password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_al" />
+
+    <Button
+        android:id="@+id/Login_al"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/lm"
+        android:onClick="authenticate_login"
+        android:stateListAnimator="@null"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpassword_al" />
+
+    <EditText
+        android:id="@+id/confirmpassword_al"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/text_round_button"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_al" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_material_arrow_back"
+        android:onClick="openLoginActivity"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

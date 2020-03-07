@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pakalo Chatbot</string>
+    <string name="prompt">Press the button to start Pakalo\'s assistant</string>
+    <string name="initial_phrase">Hey there! I\'m Pakalo, and I help you cook</string>
+</resources>

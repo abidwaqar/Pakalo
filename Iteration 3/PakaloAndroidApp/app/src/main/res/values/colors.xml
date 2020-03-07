@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2C4F25</color>
+    <color name="colorPrimaryDark">#254F41</color>
+    <color name="colorAccent">#407435</color>
+
+    <color name="colorPakaloP">#2C4F25</color>
+    <color name="colorPakaloD">#254F41</color>
+    <color name="colorPakaloL">#407435</color>
+
+    <color name="colorFontL">#2C2C2C</color>
+
+    <color name="colorBox">#EAEAEA</color>
+</resources>
