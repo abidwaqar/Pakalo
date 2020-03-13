@@ -9,12 +9,50 @@ The application also features a variety of recipes, each of which is available f
 * [Algolia](https://www.algolia.com/doc/guides/sending-and-managing-data/send-and-update-your-data/tutorials/firebase-algolia/) - Searching the Firebase database
 * [Anaconda](https://www.anaconda.com/) - For Python enviromnent
 
+### Running Pakalo
+To properly run the Pakalo application, you first need to have an Anaconda Python 3 environment set up, and Rasa installed in the environment. You also need to have [ngrok](https://ngrok.com/) installed, this will help us set up a localhost server that Rasa uses into a publicly available webhook. Pakalo needs an internet connection to work.
+
+To run Pakalo,
+* Open up two instances of Anaconda prompt and navigate to the environment where rasa is installed as well as the folder with the Rasa project.
+* On one prompt run the command to run the rasa action server
+```
+rasa run actions
+```
+* On the second prompt run the command to run rasa
+```
+rasa run --enable-api --cors "*"
+```
+* Open ngrok and run the command to set up the public server
+```
+ngrok http 5005
+```
+* Copy the ngrok https link into the aimybox Android project in the AimyboxApplication.kt file as shownbelow keeping /webhooks/rest/webhook
+```java
+val dialogApi = RasaDialogApi(unitId, "https://a2b8283e.ngrok.io/webhooks/rest/webhook")
+```
+* Install both Android projects onto an Android phone, making sure the rasa servers as well as ngrok is running properly. The app can now be used on the phone.
+
 ### Using the application
 For the moment, the two Android Studio projects need to be installed on an Android device to run the app. Once installed, a user can use their Gmail account to sign up and start using the app. The user can search for recipes, open any one they like, and start it on the chatbot.
-![Sign In](https://imgur.com/mULmqMC)
-![Sign Up](https://imgur.com/t2gV00d)
-![Home Page](https://imgur.com/U7DSfWb)
-![Search Recipe](https://imgur.com/am4z8MS)
-![Open Recipe](https://imgur.com/uyWw4ZD)
-![View Recipe](https://imgur.com/yux5pQQ)
-![Open chatbot](https://imgur.com/PwJK13a)
+
+<img src="https://imgur.com/mULmqMC.png" width="40%" />
+
+<img src="https://imgur.com/t2gV00d.png" width="40%" />
+
+<img src="https://imgur.com/U7DSfWb.png" width="40%" />
+
+<img src="https://imgur.com/am4z8MS.png" width="40%" />
+
+<img src="https://imgur.com/uyWw4ZD.png" width="40%" />
+
+<img src="https://imgur.com/yux5pQQ.png" width="40%" />
+
+<img src="https://imgur.com/PwJK13a.png" width="40%" />
+
+### Contributors of the Project
+* [Abid Waqar](https://github.com/abidwaqar)
+* [Mashood Ur Rehman](https://github.com/LiteralWizard)
+* Nauraiz Mushtaq
+
+### Supervisor
+Dr. Omer Beg
