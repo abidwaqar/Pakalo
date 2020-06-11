@@ -1,0 +1,167 @@
+actions:
+- utter_affirm
+- utter_ask_what_to_cook
+- utter_complete
+- utter_firstStep
+- utter_goodbye
+- utter_greet
+- utter_iamabot
+- utter_lastStep
+- utter_negate
+- utter_nextStep
+- utter_ok
+- utter_prevStep
+- utter_wanna_cook
+- utter_ask_question
+- utter_i_can_help
+- utter_your_recipe
+- utter_ask_recipe
+- action_search_recipe
+- utter_confirm
+- action_start_recipe
+- action_next_step
+- action_previous_step
+- action_last_step
+- action_complete_recipe
+- utter_repeatStep
+- action_repeat_step
+- action_tell_ingredients
+- utter_ask_ingredient
+- utter_default
+- utter_icando
+- utter_whomademe
+- utter_telltostart
+
+entities:
+- recipe
+- recipe_id
+
+intents:
+- affirm
+- greet
+- search_recipe
+- goodbye
+- deny
+- first_step
+- last_step
+- previous_step
+- next_step
+- complete_recipe
+- ask_question
+- out_of_scope
+- change_mind
+- repeat_step
+- tell_ingredients
+- ingredient_quantity
+- who_are_you
+- recipe_id_from_button
+
+slots:
+  recipe:
+    type: unfeaturized
+  recipe_id:
+    type: unfeaturized
+  recipe_step:
+    type: unfeaturized
+    auto_fill: false
+  question:
+    type: unfeaturized
+    auto_fill: false
+  ingredient:
+    type: unfeaturized
+    auto_fill: false
+
+forms:
+- general_question_form
+- recipe_form
+- ingredient_quantity_form
+
+templates:
+  utter_affirm:
+  - text: "Yes."
+  - text: "Yup."
+  - text: "That's right"
+  utter_ask_what_to_cook:
+  - text: "What would you like to cook today?"
+  - text: "Any recipe you might be craving?"
+  - text: "Alright, what are we cooking today?"
+  utter_complete:
+  - text: "You are done with this recipe"
+  - text: "All done"
+  - text: "Congratulations! You finished this recipe"
+  utter_firstStep:
+  - text: "Ready to begin another culinary journey? I am!"
+  - text: "Let's put our aprons on and wash our hands!"
+  utter_goodbye:
+  - text: "See you next time!"
+  - text: "Goodbye then"
+  - text: "Later then"
+  - text: "I'll look forward to help you cook next time"
+  utter_greet:
+  - text: "Hey!"
+  - text: "Hello there!"
+  - text: "Hi there!"
+  utter_iamabot:
+  - text: "My name is Pakalo. The AI driven kitchen assistant"
+  utter_lastStep:
+  - text: "In a hurry I see"
+  - text: "I too am eager to see the ending"
+  - text: "Let's go straight to the good part"
+  utter_negate:
+  - text: "I'm sorry no."
+  - text: "No."
+  utter_nextStep:
+  - text: "One small step for man, a giant meal for...man again"
+  - text: "You're doing great, let's move on"
+  - text: "Now this is what I call progress"
+  utter_ok:
+  - text: "Alright"
+  - text: "Okay"
+  - text: "Great"
+  utter_prevStep:
+  - text: "Back in time we go"
+  - text: "It's rewind time"
+  - text: "Commencing reverse mode"
+  utter_repeatStep:
+  - text: "I'll repeat that"
+  - text: "One more time"
+  - text: "Deja Vu"
+  utter_wanna_cook:
+  - text: "You look like you want to cook something. Right?"
+  - text: "Wanna cook something?"
+  - text: "Feel like cooking something?"
+  utter_ask_question:
+  - text: "What is your question?"
+  - text: "What do you want to ask?"
+  - text: "Let me know what you want to ask."
+  - text: "Tell me what your question is."
+  utter_i_can_help:
+  - text: "Let me know if I can help with anything"
+  - text: "If you need any help, just lemme know"
+  - text: "I'm always here if you need anything"
+  utter_your_recipe:
+  - text: "Searching for recipes on {recipe}"
+  utter_ask_recipe:
+  - text: "Can you tell me what you want to cook?"
+  - text: "What recipe do you want to search for?"
+  - text: "I need to know what recipe you want to cook."
+  utter_confirm:
+  - text: "Are you sure?"
+  - text: "You're sure about this?"
+  utter_ask_ingredient:
+  - text: "What ingredient are you asking this for?"
+  - text: "Can you specify the ingredient please?"
+  - text: "I'll need to know the ingredient you need the quantity for"
+  utter_default:
+  - text: "Can you repeat what you said? I didn't understand"
+  - text: "I'm sorry I wasn't able to understand. What did you say?"
+  - text: "I'm afraid I don't understand."
+  - text: "You may need to say that again, I didn't understand you."
+  utter_icando:
+  - text: "I can help you cook a recipe, answer your cooking related questions, and make you a better chef!"
+  utter_whomademe:
+  - text: "I was made by three college seniors, Abid, Mashood, and Nauraiz, for their Final Year Project"
+  utter_telltostart:
+  - text: "Let me know if you want to start this recipe"
+  - text: "Just tell if you want to start"
+  - text: "Tell me when you're ready to start"

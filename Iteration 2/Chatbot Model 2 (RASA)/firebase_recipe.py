@@ -29,7 +29,7 @@ class Recipe():
 
 class Recipe_db():
     def __init__(self):
-        client = SearchClient.create('RONI3GVMZF', 'd069d6b6b79085dc8fce9e619feed841')
+        client = SearchClient.create('YourApplicationID', 'YourAdminAPIKey' )
         self.algolia_recipe_db = client.init_index('recipes')
         
         cred = credentials.Certificate("./pakalo-abid786-firebase-adminsdk-xc8ts-ad52022ec7.json")

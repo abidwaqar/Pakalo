@@ -1,0 +1,18 @@
+[
+  {
+    "text": "I want to end this recipe",
+    "intent": "last_step",
+    "intent_prediction": {
+      "name": "complete_recipe",
+      "confidence": 0.529333770275116
+    }
+  },
+  {
+    "text": "end this recipe",
+    "intent": "complete_recipe",
+    "intent_prediction": {
+      "name": "last_step",
+      "confidence": 0.5291834473609924
+    }
+  }
+]
