@@ -26,28 +26,28 @@ rasa run --enable-api --cors "*"
 ```
 ngrok http 5005
 ```
-* Copy the ngrok https link into the aimybox Android project in the AimyboxApplication.kt file as shownbelow keeping /webhooks/rest/webhook
+* Copy the ngrok https link into the Android project in the RetrofitClientInstance.java file as shown below
 ```java
-val dialogApi = RasaDialogApi(unitId, "https://a2b8283e.ngrok.io/webhooks/rest/webhook")
+private static final String BASE_URL = "https://23e2249874f6.ngrok.io";
 ```
-* Install both Android projects onto an Android phone, making sure the rasa servers as well as ngrok is running properly. The app can now be used on the phone.
+* Install the Android project onto an Android phone, making sure the rasa servers as well as ngrok is running properly. The app can now be used on the phone.
 
 ### Using the application
-For the moment, the two Android Studio projects need to be installed on an Android device to run the app. Once installed, a user can use their Gmail account to sign up and start using the app. The user can search for recipes, open any one they like, and start it on the chatbot.
+For the moment, the Android Studio project needs to be installed on an Android device to run the app. Once installed, a user can use their Gmail account to sign up and start using the app. The user can search for recipes, open any one they like, like recipes, and start it on the chatbot.
 
 <img src="https://imgur.com/mULmqMC.png" width="40%" />
 
 <img src="https://imgur.com/t2gV00d.png" width="40%" />
 
-<img src="https://imgur.com/U7DSfWb.png" width="40%" />
+<img src="https://imgur.com/X3IJPX2.png" width="40%" />
 
 <img src="https://imgur.com/am4z8MS.png" width="40%" />
 
-<img src="https://imgur.com/uyWw4ZD.png" width="40%" />
+<img src="https://imgur.com/x8eAUI8.png" width="40%" />
 
 <img src="https://imgur.com/yux5pQQ.png" width="40%" />
 
-<img src="https://imgur.com/PwJK13a.png" width="40%" />
+<img src="https://imgur.com/bS39bOL.png" width="40%" />
 
 ### Contributors of the Project
 * [Abid Waqar](https://github.com/abidwaqar)
