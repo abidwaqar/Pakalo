@@ -2,6 +2,8 @@
 Pakalo is an Android application designed to help new and amateur cooks in following recipes easily without the hassle of constantly going back and forth through written and video recipes. The application's primary feature is a chatbot which guides a user step by step throughout a recipe, at the user's pace.
 The application also features a variety of recipes, each of which is available for a user to start via tha chatbot. Pakalo's chatbot is primarily designed to guide the user through a recipe, and among many intents, the chatbot can search recipes, start and end recipes, search for the quantity of each ingredient, go back and forth through a recipe, and repeat the ingredients of a recipe et cetera.
 
+https://user-images.githubusercontent.com/40558269/168164229-fc70d7c5-c594-45f6-8d32-9389ecdd75d3.mp4
+
 ### Built With
 * [RASA](https://rasa.com/) - Framework to build open source conversational chatbots
 * [Android Studio](https://developer.android.com/studio) - Development of the application
